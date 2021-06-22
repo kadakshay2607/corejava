@@ -41,7 +41,7 @@ public class Student implements Comparator<Student> {
 
 	@Override
 	public int hashCode() {
-		return this.id;
+		return 0;
 	}
 	public Student() {
 		super();
