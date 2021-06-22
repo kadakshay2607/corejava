@@ -4,9 +4,7 @@ public class Person implements Comparable<Person> {
 	int id;
 	int rollNo;
 	String name;
-	public static void main(String[] args) {
-		
-	}
+
 
 	@Override
 	public int compareTo(Person o) {

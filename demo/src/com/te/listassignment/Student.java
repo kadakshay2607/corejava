@@ -2,16 +2,16 @@ package com.te.listassignment;
 
 import java.util.Comparator;
 
-public class Student extends Decision implements Comparable<Student> {
-	
+public class Student implements Comparator<Student> {
+
 	int id;
 	String className;
 	String name;
 	int age;
-	double marks;
-	int k;
-	
-	public Student( int id, String className, String name, int age, double marks) {
+	int marks;
+	static int a;	
+
+	public Student( int id, String className, String name, int age, int marks) {
 		this.id = id;
 		this.className = className;
 		this.name = name;
@@ -19,46 +19,35 @@ public class Student extends Decision implements Comparable<Student> {
 		this.marks = marks;
 	}
 
-	
+
 	@Override
 	public String toString() {
 		return "id=" + id + ", className=" + className + ", name=" + name + ", age=" + age + ", marks=" + marks;
 	}
 	@Override
-	public int compareTo(Student o) {
-		return this.hashCode()-o.hashCode();
+	public int compare(Student o1, Student o2) {
+			if (a == 1) {
+				return o1.id-o2.id;
+			}
+			else if (a == 2) {
+				return o1.className.compareTo(o2.className);
+			}else if (a == 3) {
+				return o1.name.compareTo(o2.name);
+			}else if (a == 4) {
+				return o1.age-o2.age;
+			}
+			return o1.marks-o2.marks;
 	}
+
 	@Override
 	public int hashCode() {
-		return this.k;
+		return this.id;
 	}
 	public Student() {
 		super();
 	}
-	public void dec1(int p) {
-		int a = p;
-		if (this.a == 1) {
-          this.k = this.id;
-          System.out.println("hi");
-		}
-		else if(this.a == 2) {
-			
-		}
-		else if(this.a == 3) {
-
-		}
-		else if(this.a == 4) {
-			 this.k = this.age;
-		}
-		else if(this.a == 5) {
-			
-		}
-		else if(this.a == 6) {
-         System.out.println("Exit from the Program.");
-		}
-
-
-	}
 	
+	}
 
-}
+
+
