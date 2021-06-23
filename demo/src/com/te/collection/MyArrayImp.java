@@ -25,7 +25,7 @@ public class MyArrayImp {
 		myArray.remove(1);
 		//myArray.remove(2);
 		System.out.println("after apply remove method");
-		for(int i=0;i<myArray.size()-myArray.k;i++) {
+		for(int i=0;i<myArray.size();i++) {
 			System.out.println(myArray.get(i));
 		}
 		
