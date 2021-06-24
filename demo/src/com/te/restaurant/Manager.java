@@ -56,7 +56,9 @@ public class Manager {
 		bill[3] = c;
 		bill[4] = p;
 		int k = bill[0]+bill[1]+bill[2]+bill[3]+bill[4];
+		System.out.println(".................................");
 		System.out.println("Total  Amount Is : "+ k + " Rs");
+		System.out.println(".................................");
 		System.out.println("Order Placed Successfully");
 	}
 
