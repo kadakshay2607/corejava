@@ -6,6 +6,7 @@ public class JobPortalMain {
 
 	public static void main(String[] args) {
 		Login login = new Login();
+		
 		int i =1;
 		for(;;) {
 			login.no = i;

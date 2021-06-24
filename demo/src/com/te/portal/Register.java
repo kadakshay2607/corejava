@@ -64,6 +64,7 @@ public class Register  {
 			degree = scanner.nextDouble();
 			arrayList.add(degree);
 			System.out.println("Registration Completed");
+			System.out.println("..........................");
 		}
 		else if (no == 2) {
 			System.out.println("Enter  Name");
@@ -79,6 +80,8 @@ public class Register  {
 			degree = scanner.nextDouble();
 			arrayList.add(degree);
 			System.out.println("Registration Completed");
+			System.out.println("..........................");
+
 		}
 		else if (no == 3) {
 			System.out.println("Enter  Name");
@@ -94,6 +97,8 @@ public class Register  {
 			degree = scanner.nextDouble();
 			arrayList.add(degree);
 			System.out.println("Registration Completed");
+			System.out.println("..........................");
+
 		}
 		else if (no == 4) {
 			System.out.println("Enter  Name");
@@ -109,6 +114,8 @@ public class Register  {
 			degree = scanner.nextDouble();
 			arrayList.add(degree);
 			System.out.println("Registration Completed");
+			System.out.println("..........................");
+
 		}
 	}
 
