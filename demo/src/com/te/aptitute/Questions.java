@@ -6,7 +6,8 @@ public class Questions {
 	
 	String [] str = new String[20];
 	int [] a = new int [20];
-	int skip = 0;
+	int skip;
+	int per;
 	
 	Scanner scanner = new Scanner(System.in);
 	
@@ -55,8 +56,8 @@ public class Questions {
 		}		
 		System.out.println("No of Correct Option is : " + count);
 		System.out.println("No of Questions Skipped :" + skip);
-		int per = count/a.length*100;
-		//System.out.println("Percentage for Test Is : " + per);
+		 per = count/a.length*100;
+		System.out.println("Percentage for Test Is : " + per);
 		if ((count >= 3) && (count <= 8)) {
 			System.out.println("Performance is bad");	
 		}
