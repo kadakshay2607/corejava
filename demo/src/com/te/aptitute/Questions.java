@@ -15,10 +15,10 @@ public class Questions {
 		int i = 1;
 		for (int j = 0; j < str.length; j++) {
 			str[j] = "Q."+i+"  What is correct option ?"
-					+" option=1"
-					+" option=2"
-					+" option=3"
-					+" option=4"
+					+" 1.option"
+					+" 2.option"
+					+" 3.option"
+					+" 4.option"
 					+" Skip=5";
 			i++;
 		}

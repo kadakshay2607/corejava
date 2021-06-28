@@ -13,6 +13,9 @@ public class AptituteMain {
         if (m == 1) {
 			questions.start();
 		}
+        for (int string : questions.a) {
+			System.out.println(string);
+		}
         System.out.println("For result press 2");
         int n = scanner.nextInt();
         if (n == 2) {
