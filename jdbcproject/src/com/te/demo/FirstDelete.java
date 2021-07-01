@@ -4,15 +4,14 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
 
-public class FirstUpdate {
-
+public class FirstDelete {
 	 static Connection connection;
 	 static Statement statement;
 
 	public static void main(String[] args) {
 		
 		String url = "jdbc:mysql://localhost:3306/student_info?user=root&password=lion";
-		String query = "update info set id=20 where id =10";
+		String query = "delete from info where name = 'john'";
 		try {
 			
 			Class.forName("com.mysql.jdbc.Driver");
