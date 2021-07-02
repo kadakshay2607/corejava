@@ -1,8 +1,10 @@
 package com.te.demo;
 
+import java.io.FileInputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
+import java.util.Properties;
 
 public class FirstDelete {
 	 static Connection connection;
@@ -10,12 +12,17 @@ public class FirstDelete {
 
 	public static void main(String[] args) {
 		
-		String url = "jdbc:mysql://localhost:3306/student_info?user=root&password=lion";
-		String query = "delete from info where name = 'john'";
+	
 		try {
+			FileInputStream fileInputStream = new FileInputStream("details.properties");
+			Properties properties = new Properties();
+			properties.load(fileInputStream);
+			String ur = properties.getProperty("url");
+			String query = properties.getProperty("query_d");
+			String dr = properties.getProperty("driver_d");
 			
 			Class.forName("com.mysql.jdbc.Driver");
-			connection = DriverManager.getConnection(url);
+			connection = DriverManager.getConnection(ur);
 			statement = connection.createStatement();
 			int result = statement.executeUpdate(query);
 			if (result!=0) {
